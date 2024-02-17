@@ -1,0 +1,23 @@
+name: Authentication Service CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'authentication-service/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'authentication-service/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build and test
+        run: |
+          cd authentication-service
+          # Your build and test commands here
