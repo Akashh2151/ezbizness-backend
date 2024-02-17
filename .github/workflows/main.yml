@@ -32,4 +32,4 @@ jobs:
           context: ./authentication-service
           file: ./authentication-service/Dockerfile
           push: true
-          tags: yourusername/yourimage:latest
+          tags: akashh2151/authentication-service:latest
